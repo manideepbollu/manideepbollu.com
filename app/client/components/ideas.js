@@ -12,20 +12,17 @@ export default class Ideas extends React.Component {
                             <div className="4u 12u$(medium) idea-block">
                                 <i className="flaticon-multimedia"></i>
                                 <h3>Backstage</h3>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. </p>
-                                <a href="#one" className="button">More</a>
+                                <p>Backstage is a browser extension (Chrome and Firefox for now) which tracks users browsing activity by applying machine learning techniques and provides suggested content. </p>
                             </div>
                             <div className="4u 12u$(medium) idea-block">
                                 <i className="flaticon-business"></i>
                                 <h3>Simply Awesome</h3>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. </p>
-                                <a href="#one" className="button">More</a>
+                                <p>Simply Awesome is a real time competition assessment tool which is meant to provide real time information on various factors affecting a restaurant business. </p>
                             </div>
                             <div className="4u$ 12u$(medium) idea-block">
                                 <i className="flaticon-transport"></i>
                                 <h3>Shared Delivery Network (SDN)</h3>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. </p>
-                                <a href="#one" className="button">More</a>
+                                <p>SDN is a shared delivery network, it's an app which connects individual car/bike drivers who are willing to deliver stuff with those business/individuals who require delivery. </p>
                             </div>
                         </div>
                     </div>

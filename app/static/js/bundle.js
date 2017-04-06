@@ -465,12 +465,7 @@ var Ideas = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. "
-                            ),
-                            _react2.default.createElement(
-                                "a",
-                                { href: "#one", className: "button" },
-                                "More"
+                                "Backstage is a browser extension (Chrome and Firefox for now) which tracks users browsing activity by applying machine learning techniques and provides suggested content. "
                             )
                         ),
                         _react2.default.createElement(
@@ -485,12 +480,7 @@ var Ideas = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. "
-                            ),
-                            _react2.default.createElement(
-                                "a",
-                                { href: "#one", className: "button" },
-                                "More"
+                                "Simply Awesome is a real time competition assessment tool which is meant to provide real time information on various factors affecting a restaurant business. "
                             )
                         ),
                         _react2.default.createElement(
@@ -505,12 +495,7 @@ var Ideas = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. "
-                            ),
-                            _react2.default.createElement(
-                                "a",
-                                { href: "#one", className: "button" },
-                                "More"
+                                "SDN is a shared delivery network, it's an app which connects individual car/bike drivers who are willing to deliver stuff with those business/individuals who require delivery. "
                             )
                         )
                     )
