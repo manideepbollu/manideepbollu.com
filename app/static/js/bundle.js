@@ -305,7 +305,31 @@ var Contact = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\xA9 2017 - Manideep Bollu. Content is reserved. But the design is free to adopt."
+                                "\xA9 2017 - Manideep Bollu. Content is reserved. But the design is free to adapt. Icons designed by ",
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "http://www.flaticon.com/authors/google" },
+                                    "Google"
+                                ),
+                                ", ",
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "http://www.flaticon.com/authors/freepik" },
+                                    "Freepik"
+                                ),
+                                " and ",
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "http://www.flaticon.com/authors/dave-gandy" },
+                                    "Dave Gandy"
+                                ),
+                                " from ",
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "http://www.flaticon.com/" },
+                                    "flaticon"
+                                ),
+                                "."
                             )
                         )
                     )
@@ -673,12 +697,14 @@ var Popup = function (_React$Component) {
                     _react2.default.createElement(
                         "h1",
                         null,
-                        "Thank you!"
+                        "Sweet!",
+                        _react2.default.createElement("br", null),
+                        " I will be right back..."
                     ),
                     _react2.default.createElement(
                         "a",
                         { className: "button", href: "#", onClick: this.props.clickCallback },
-                        "Go Back!"
+                        "Got it!"
                     )
                 )
             );

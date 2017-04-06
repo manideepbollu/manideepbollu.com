@@ -2,8 +2,6 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import 'font-awesome.min.css';
-@import 'flaticon.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
 /*
@@ -62,10 +60,7 @@
 	@import 'components/icon';
 	@import 'components/image';
 	@import 'components/list';
-	@import 'components/table';
 	@import 'components/button';
-	@import 'components/tiles';
-	@import 'components/contact-method';
 	@import 'components/spotlights';
 
 // Layout.
@@ -74,7 +69,6 @@
 	@import 'layout/banner';
 	@import 'layout/main';
 	@import 'layout/contact';
-	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/popup';
 	@import 'layout/timeline';

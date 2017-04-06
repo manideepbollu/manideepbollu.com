@@ -13,8 +13,8 @@ export default class Popup extends React.Component {
         return (
             <div id="popup">
                 <div className="inner">
-                    <h1>Thank you!</h1>
-                    <a className="button" href="#" onClick={this.props.clickCallback}>Go Back!</a>
+                    <h1>Sweet!<br /> I will be right back...</h1>
+                    <a className="button" href="#" onClick={this.props.clickCallback}>Got it!</a>
                 </div>
             </div>
         )

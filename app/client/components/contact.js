@@ -71,7 +71,7 @@ export default class Contact extends React.Component {
                             <div className="3u$"><a href="https://bitbucket.org/manideepbollu/" target="_blank" className="image fit"><i className="flaticon-bitbucket-sign"></i></a></div>
                         </div>
                         <footer>
-                            <p>© 2017 - Manideep Bollu. Content is reserved. But the design is free to adopt.</p>
+                            <p>© 2017 - Manideep Bollu. Content is reserved. But the design is free to adapt. Icons designed by <a href="http://www.flaticon.com/authors/google">Google</a>, <a href="http://www.flaticon.com/authors/freepik">Freepik</a> and <a href="http://www.flaticon.com/authors/dave-gandy">Dave Gandy</a> from <a href="http://www.flaticon.com/">flaticon</a>.</p>
                         </footer>
                     </section>
                 </div>
