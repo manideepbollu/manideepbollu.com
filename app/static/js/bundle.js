@@ -251,7 +251,7 @@ var Contact = function (_React$Component) {
                             "You can message me about work, latest trends, projects, ideas or just say \"Hi\" for a friendly chat; we may sit over a delicious brew.",
                             _react2.default.createElement("br", null),
                             _react2.default.createElement("br", null),
-                            "And, thank you for checking me out."
+                            "Thank you for checking me out."
                         ),
                         _react2.default.createElement(
                             "div",
@@ -305,7 +305,13 @@ var Contact = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\xA9 2017 - Manideep Bollu. Content is reserved. But the design is free to adapt. Icons designed by ",
+                                "\xA9 2017 - ",
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "http://www.manideepbollu.com/" },
+                                    "Manideep Bollu"
+                                ),
+                                ". Content is reserved. But the design is free to adapt. Icons designed by ",
                                 _react2.default.createElement(
                                     "a",
                                     { href: "http://www.flaticon.com/authors/google" },
@@ -412,7 +418,7 @@ var Header = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '/ManideepBollu_Resume.pdf', className: 'resume-download' },
+                            { href: '/ManideepBollu_Resume.pdf', target: '_blank', className: 'resume-download' },
                             'Resume'
                         )
                     )

@@ -14,7 +14,7 @@ export default class Header extends React.Component {
                     <a href="index.html" className="logo"><strong>Manideep</strong> <span>Bollu</span></a>
                     
                     <nav>
-                        <a href="/ManideepBollu_Resume.pdf" className="resume-download">Resume</a>
+                        <a href="/ManideepBollu_Resume.pdf" target="_blank" className="resume-download">Resume</a>
                     </nav>
                 </header>
             </ReactCSSTransitionGroup>

@@ -2661,6 +2661,17 @@ Main components
     content: "";
     display: table;
     clear: both; }
+  .timeline-content .anim-target:before, .timeline-content .anim-target:after {
+    content: "";
+    width: 2px;
+    background-color: #f8f8f8;
+    height: 100%;
+    position: absolute;
+    z-index: 4; }
+  .timeline-content .anim-target:before {
+    margin-right: -2px; }
+  .timeline-content .anim-target:after {
+    margin-left: -2px; }
   .timeline-content h2 {
     color: #303e49; }
   .timeline-content p, .timeline-content .read-more, .timeline-content .date {
@@ -2675,7 +2686,8 @@ Main components
   .timeline-content .date {
     float: left;
     padding: .8em 0;
-    opacity: .7; }
+    opacity: .7;
+    margin-left: 2px; }
 
 @media only screen and (min-width: 768px) {
   #timeline {
