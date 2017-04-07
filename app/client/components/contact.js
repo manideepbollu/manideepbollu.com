@@ -30,14 +30,14 @@ export default class Contact extends React.Component {
     }
 
     submitForm() {
-        fetch('/mailer', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(this.state)
-        });
+        // fetch('/mailer', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(this.state)
+        // });
         this.props.clickCallback();
     }
 

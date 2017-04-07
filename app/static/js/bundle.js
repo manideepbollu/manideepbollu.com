@@ -166,14 +166,14 @@ var Contact = function (_React$Component) {
     }, {
         key: "submitForm",
         value: function submitForm() {
-            fetch('/mailer', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(this.state)
-            });
+            // fetch('/mailer', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Accept': 'application/json',
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(this.state)
+            // });
             this.props.clickCallback();
         }
     }, {
