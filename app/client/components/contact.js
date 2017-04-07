@@ -30,6 +30,14 @@ export default class Contact extends React.Component {
     }
 
     submitForm() {
+        fetch('/mailer', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(this.state)
+        });
         this.props.clickCallback();
     }
 
@@ -43,11 +51,11 @@ export default class Contact extends React.Component {
                     <section>
                         <div className="field half first">
                             <label htmlFor="name">Name</label>
-                            <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange}/>
+                            <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
                         </div>
                         <div className="field half">
                             <label htmlFor="email">Email</label>
-                            <input type="text" name="email" id="email" value={this.state.email} onChange={this.handleChange}/>
+                            <input type="text" name="email" id="email" value={this.state.email} onChange={this.handleChange} />
                         </div>
                         <div className="field">
                             <label htmlFor="message">Message</label>
@@ -60,7 +68,7 @@ export default class Contact extends React.Component {
                     </section>
                     <section>
                         <strong>You can message me about work, latest trends, projects, ideas or just say "Hi" for a friendly chat; we may sit over a delicious brew.<br /><br />
-                        Thank you for checking me out.</strong>
+                            Thank you for checking me out.</strong>
                         <div className="self">
                             <img className="profile-pic" src="./images/mbprofile.jpg" />
                             <img className="signature" src="./images/signature.png" />
