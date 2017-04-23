@@ -1645,13 +1645,13 @@ a.icon.alt:active:before {
 .flaticon-business:before {
   content: "\f101"; }
 
-.flaticon-multimedia:before {
+.flaticon-transport:before {
   content: "\f102"; }
 
-.flaticon-transport:before {
+.flaticon-school:before {
   content: "\f103"; }
 
-.flaticon-facebook-logo:before {
+.flaticon-multimedia:before {
   content: "\f104"; }
 
 .flaticon-linkedin-sign:before {
@@ -1659,6 +1659,12 @@ a.icon.alt:active:before {
 
 .flaticon-bitbucket-sign:before {
   content: "\f106"; }
+
+.flaticon-github:before {
+  content: "\f107"; }
+
+.flaticon-facebook-logo:before {
+  content: "\f108"; }
 
 /* Image */
 .image {
@@ -2758,10 +2764,20 @@ Main components
   background: transparent; }
   #ideas .inner {
     text-align: center;
-    padding: 2.5em 0; }
-    #ideas .inner .idea-block {
-      margin-bottom: 0.5em; }
-      #ideas .inner .idea-block img {
-        width: 50%;
-        border-radius: 50%;
-        margin: 2em 0; }
+    padding: 2.5em 0 3em 0; }
+    #ideas .inner h1 {
+      margin: 0; }
+    #ideas .inner .row {
+      display: table-row;
+      margin-bottom: 1em; }
+      #ideas .inner .row .idea-block {
+        padding: 1.5em 0.7em 1em 0.7em;
+        display: table-cell; }
+        #ideas .inner .row .idea-block svg {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 1em; }
+        #ideas .inner .row .idea-block img {
+          width: 50%;
+          border-radius: 50%;
+          margin: 2em 0; }

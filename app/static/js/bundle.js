@@ -471,6 +471,11 @@ var Ideas = function (_React$Component) {
     }
 
     _createClass(Ideas, [{
+        key: "gotoGithub",
+        value: function gotoGithub(dude) {
+            console.log(dude);
+        }
+    }, {
         key: "render",
         value: function render() {
             return _react2.default.createElement(
@@ -485,7 +490,7 @@ var Ideas = function (_React$Component) {
                         _react2.default.createElement(
                             "h1",
                             null,
-                            "Currently working on"
+                            "Some of my work"
                         )
                     ),
                     _react2.default.createElement(
@@ -493,7 +498,7 @@ var Ideas = function (_React$Component) {
                         { className: "row" },
                         _react2.default.createElement(
                             "div",
-                            { className: "4u 12u$(medium) idea-block" },
+                            { className: "3u 12u$(medium) idea-block" },
                             _react2.default.createElement("i", { className: "flaticon-multimedia" }),
                             _react2.default.createElement(
                                 "h3",
@@ -503,12 +508,57 @@ var Ideas = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "Backstage is a browser extension (Chrome and Firefox for now) which tracks users browsing activity by applying machine learning techniques and provides suggested content. "
+                                "Backstage is a browser extension (Chrome and Firefox for now) which tracks users browsing activity by applying machine learning techniques and provides various analytics. "
+                            ),
+                            _react2.default.createElement(
+                                "a",
+                                { className: "button", href: "https://github.com/manideepbollu", target: "_blank" },
+                                "Github"
                             )
                         ),
                         _react2.default.createElement(
                             "div",
-                            { className: "4u 12u$(medium) idea-block" },
+                            { className: "3u 12u$(medium) idea-block" },
+                            _react2.default.createElement("i", { className: "flaticon-transport" }),
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Cosail"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "Cosail is an open source boat sharing platform, inspired from Company Carpool. It enables boat sharing and encourages more people to travel in one boat which reduces the costs. "
+                            ),
+                            _react2.default.createElement(
+                                "a",
+                                { className: "button", href: "https://github.com/manideepbollu/cosail", target: "_blank" },
+                                "Github"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "3u 12u$(medium) idea-block" },
+                            _react2.default.createElement("i", { className: "flaticon-school" }),
+                            _react2.default.createElement(
+                                "h3",
+                                null,
+                                "Scintin"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "SCINTIN is an ERP + School Network project. It can be used as an enterprise resource planner which can address all the issues involved in administering a school/college. "
+                            ),
+                            _react2.default.createElement(
+                                "a",
+                                { className: "button", href: "https://github.com/manideepbollu/scintin", target: "_blank" },
+                                "Github"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "3u 12u$(medium) idea-block" },
                             _react2.default.createElement("i", { className: "flaticon-business" }),
                             _react2.default.createElement(
                                 "h3",
@@ -519,21 +569,11 @@ var Ideas = function (_React$Component) {
                                 "p",
                                 null,
                                 "Simply Awesome is a real time competition assessment tool which is meant to provide real time information on various factors affecting a restaurant business. "
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "4u$ 12u$(medium) idea-block" },
-                            _react2.default.createElement("i", { className: "flaticon-transport" }),
-                            _react2.default.createElement(
-                                "h3",
-                                null,
-                                "Shared Delivery Network (SDN)"
                             ),
                             _react2.default.createElement(
-                                "p",
-                                null,
-                                "SDN is a shared delivery network, it's an app which connects individual car/bike drivers who are willing to deliver stuff with those business/individuals who require delivery. "
+                                "a",
+                                { className: "button", href: "https://github.com/manideepbollu/simplyawesome", target: "_blank" },
+                                "Github"
                             )
                         )
                     )
