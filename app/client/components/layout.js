@@ -49,14 +49,7 @@ export default class Layout extends React.Component {
                     <Ideas />
                     <Contact clickCallback={this.togglePopup} />
                 </div>
-                <ReactCSSTransitionGroup
-                    component="div"
-                    transitionName="show"
-                    transitionAppear={false}
-                    transitionEnterTimeout={1500}
-                    transitionLeaveTimeout={1000}>
-                    {this.state.menuComponent}
-                </ReactCSSTransitionGroup>
+                {this.state.menuComponent}
             </div>
         );
     }

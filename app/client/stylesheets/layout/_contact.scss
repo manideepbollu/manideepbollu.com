@@ -84,6 +84,14 @@
 			input[type="text"], textarea {
 				background: _palette(bg);
 				margin: 0.7em 0 1.5em 0;
+
+				&.invalid {
+					border: 1px solid _palette(border-err);
+				}
+
+				&.valid {
+					border: 1px solid _palette(border-valid);
+				}
 			}
 
 			input[type="text"] {

@@ -6,39 +6,85 @@ export default class Contact extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.resetForm = this.resetForm.bind(this);
         this.submitForm = this.submitForm.bind(this);
+        this.checkFormValidity = this.checkFormValidity.bind(this);
         this.state = {
-            name: "",
-            email: "",
-            message: ""
+            name: {
+                value: "",
+                status: "initial"
+            },
+            email: {
+                value: "",
+                status: "initial"
+            },
+            message: {
+                value: "",
+                status: "initial"
+            }
         };
 
     }
 
     resetForm() {
         this.setState({
-            name: "",
-            email: "",
-            message: ""
+            name: {
+                value: "",
+                status: "initial"
+            },
+            email: {
+                value: "",
+                status: "initial"
+            },
+            message: {
+                value: "",
+                status: "initial"
+            }
         });
     }
 
     handleChange(event) {
         let target = event.target;
-        this.setState({
-            [target.name]: target.value
-        });
+        this.setState(Object.assign({}, this.state, {
+            [target.name]: Object.assign({}, this.state[target.name], {
+                value: target.value,
+                status: target.value !== "" ? "valid" : this.state[target.name].status === "initial" ? "initial" : "invalid"
+            })
+        }));
+    }
+
+    checkFormValidity() {
+        this.setState(Object.assign({}, this.state, {
+            name: {
+                value: this.state.name.value,
+                status: this.state.name.value !== "" ? "valid" : "invalid"
+            },
+            email: {
+                value: this.state.email.value,
+                status: this.state.email.value !== "" ? "valid" : "invalid"
+            },
+            message: {
+                value: this.state.message.value,
+                status: this.state.message.value !== "" ? "valid" : "invalid"
+            }
+        }))
     }
 
     submitForm() {
-        // fetch('/mailer', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(this.state)
-        // });
-        this.props.clickCallback();
+        if (this.state.name.status === "valid" &&
+            this.state.email.status === "valid" &&
+            this.state.message.status === "valid") {
+            fetch('/mailer', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(this.state)
+            });
+            this.props.clickCallback();
+            this.resetForm();
+        } else {
+            this.checkFormValidity();
+        }
     }
 
     render() {
@@ -51,15 +97,15 @@ export default class Contact extends React.Component {
                     <section>
                         <div className="field half first">
                             <label htmlFor="name">Name</label>
-                            <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
+                            <input type="text" name="name" id="name" className={this.state.name.status} value={this.state.name.value} onChange={this.handleChange} />
                         </div>
                         <div className="field half">
                             <label htmlFor="email">Email</label>
-                            <input type="text" name="email" id="email" value={this.state.email} onChange={this.handleChange} />
+                            <input type="text" name="email" id="email" className={this.state.email.status} value={this.state.email.value} onChange={this.handleChange} />
                         </div>
                         <div className="field">
                             <label htmlFor="message">Message</label>
-                            <textarea name="message" id="message" rows="6" value={this.state.message} onChange={this.handleChange}></textarea>
+                            <textarea name="message" id="message" rows="6" className={this.state.message.status} value={this.state.message.value} onChange={this.handleChange}></textarea>
                         </div>
                         <ul className="actions">
                             <li><a className="button special" onClick={this.submitForm}>Send Message</a></li>

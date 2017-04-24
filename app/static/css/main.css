@@ -2501,6 +2501,10 @@ button,
     #contact > .inner input[type="text"], #contact > .inner textarea {
       background: #e2e7e3;
       margin: 0.7em 0 1.5em 0; }
+      #contact > .inner input[type="text"].invalid, #contact > .inner textarea.invalid {
+        border: 1px solid #FF0000; }
+      #contact > .inner input[type="text"].valid, #contact > .inner textarea.valid {
+        border: 1px solid #00FF7F; }
     #contact > .inner input[type="text"]:after {
       content: "H"; }
   @media screen and (max-width: 980px) {

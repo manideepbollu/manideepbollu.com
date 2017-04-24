@@ -139,10 +139,20 @@ var Contact = function (_React$Component) {
         _this.handleChange = _this.handleChange.bind(_this);
         _this.resetForm = _this.resetForm.bind(_this);
         _this.submitForm = _this.submitForm.bind(_this);
+        _this.checkFormValidity = _this.checkFormValidity.bind(_this);
         _this.state = {
-            name: "",
-            email: "",
-            message: ""
+            name: {
+                value: "",
+                status: "initial"
+            },
+            email: {
+                value: "",
+                status: "initial"
+            },
+            message: {
+                value: "",
+                status: "initial"
+            }
         };
 
         return _this;
@@ -152,29 +162,64 @@ var Contact = function (_React$Component) {
         key: "resetForm",
         value: function resetForm() {
             this.setState({
-                name: "",
-                email: "",
-                message: ""
+                name: {
+                    value: "",
+                    status: "initial"
+                },
+                email: {
+                    value: "",
+                    status: "initial"
+                },
+                message: {
+                    value: "",
+                    status: "initial"
+                }
             });
         }
     }, {
         key: "handleChange",
         value: function handleChange(event) {
             var target = event.target;
-            this.setState(_defineProperty({}, target.name, target.value));
+            this.setState(Object.assign({}, this.state, _defineProperty({}, target.name, Object.assign({}, this.state[target.name], {
+                value: target.value,
+                status: target.value !== "" ? "valid" : this.state[target.name].status === "initial" ? "initial" : "invalid"
+            }))));
+        }
+    }, {
+        key: "checkFormValidity",
+        value: function checkFormValidity() {
+            this.setState(Object.assign({}, this.state, {
+                name: {
+                    value: this.state.name.value,
+                    status: this.state.name.value !== "" ? "valid" : "invalid"
+                },
+                email: {
+                    value: this.state.email.value,
+                    status: this.state.email.value !== "" ? "valid" : "invalid"
+                },
+                message: {
+                    value: this.state.message.value,
+                    status: this.state.message.value !== "" ? "valid" : "invalid"
+                }
+            }));
         }
     }, {
         key: "submitForm",
         value: function submitForm() {
-            // fetch('/mailer', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Accept': 'application/json',
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(this.state)
-            // });
-            this.props.clickCallback();
+            if (this.state.name.status === "valid" && this.state.email.status === "valid" && this.state.message.status === "valid") {
+                fetch('/mailer', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(this.state)
+                });
+                this.props.clickCallback();
+                this.resetForm();
+            } else {
+                this.checkFormValidity();
+            }
         }
     }, {
         key: "render",
@@ -205,7 +250,7 @@ var Contact = function (_React$Component) {
                                 { htmlFor: "name" },
                                 "Name"
                             ),
-                            _react2.default.createElement("input", { type: "text", name: "name", id: "name", value: this.state.name, onChange: this.handleChange })
+                            _react2.default.createElement("input", { type: "text", name: "name", id: "name", className: this.state.name.status, value: this.state.name.value, onChange: this.handleChange })
                         ),
                         _react2.default.createElement(
                             "div",
@@ -215,7 +260,7 @@ var Contact = function (_React$Component) {
                                 { htmlFor: "email" },
                                 "Email"
                             ),
-                            _react2.default.createElement("input", { type: "text", name: "email", id: "email", value: this.state.email, onChange: this.handleChange })
+                            _react2.default.createElement("input", { type: "text", name: "email", id: "email", className: this.state.email.status, value: this.state.email.value, onChange: this.handleChange })
                         ),
                         _react2.default.createElement(
                             "div",
@@ -225,7 +270,7 @@ var Contact = function (_React$Component) {
                                 { htmlFor: "message" },
                                 "Message"
                             ),
-                            _react2.default.createElement("textarea", { name: "message", id: "message", rows: "6", value: this.state.message, onChange: this.handleChange })
+                            _react2.default.createElement("textarea", { name: "message", id: "message", rows: "6", className: this.state.message.status, value: this.state.message.value, onChange: this.handleChange })
                         ),
                         _react2.default.createElement(
                             "ul",
@@ -684,16 +729,7 @@ var Layout = function (_React$Component) {
                     _react2.default.createElement(_ideas2.default, null),
                     _react2.default.createElement(_contact2.default, { clickCallback: this.togglePopup })
                 ),
-                _react2.default.createElement(
-                    _reactAddonsCssTransitionGroup2.default,
-                    {
-                        component: 'div',
-                        transitionName: 'show',
-                        transitionAppear: false,
-                        transitionEnterTimeout: 1500,
-                        transitionLeaveTimeout: 1000 },
-                    this.state.menuComponent
-                )
+                this.state.menuComponent
             );
         }
     }]);
