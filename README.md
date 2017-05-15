@@ -1,6 +1,6 @@
-# react-boilerplate
+# Personal webpage project built on React-Gulp boilerplate
 
-Simple React.js app boilerplate, using the following:
+This simple react project uses the following:
 
 * React (0.14)
 * Express (4.x)
