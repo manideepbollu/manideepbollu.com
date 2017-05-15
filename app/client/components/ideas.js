@@ -16,7 +16,7 @@ export default class Ideas extends React.Component {
                                 <i className="flaticon-multimedia"></i>
                                 <h3>Backstage</h3>
                                 <p>Backstage is a browser extension (Chrome and Firefox for now) which tracks users browsing activity by applying machine learning techniques and provides various analytics. </p>
-                                <a className="button" href="https://github.com/manideepbollu" target="_blank" >Github</a>
+                                <a className="button" href="https://github.com/manideepbollu/backstage" target="_blank" >Github</a>
                             </div>
                             <div className="3u 12u$(medium) idea-block">
                                 <i className="flaticon-transport"></i>
