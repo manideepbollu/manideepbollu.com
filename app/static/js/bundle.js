@@ -535,7 +535,7 @@ var Ideas = function (_React$Component) {
                         _react2.default.createElement(
                             "h1",
                             null,
-                            "Some of my work"
+                            "My recent work"
                         )
                     ),
                     _react2.default.createElement(
@@ -557,7 +557,7 @@ var Ideas = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { className: "button", href: "https://github.com/manideepbollu", target: "_blank" },
+                                { className: "button", href: "https://github.com/manideepbollu/backstage", target: "_blank" },
                                 "Github"
                             )
                         ),

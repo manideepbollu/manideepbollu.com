@@ -9,7 +9,7 @@ export default class Ideas extends React.Component {
             <section id="ideas">
                     <div className="inner">
                         <header>
-                            <h1>Some of my work</h1>
+                            <h1>My recent work</h1>
                         </header>
                         <div className="row">
                             <div className="3u 12u$(medium) idea-block">
