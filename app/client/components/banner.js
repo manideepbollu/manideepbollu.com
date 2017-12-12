@@ -7,8 +7,8 @@ export default class Banner extends React.Component {
         this.state = {
             header: <h1>Hi, I'm Manideep Bollu</h1>,
             content: <p>
-                        Well, I am into App development, Machine Learning, Big data and other stuff.<br/><br/>
-                        Tags: Former Software Engineer / Computer Science Graduate Student / Techie / Coffee n Code addict / Rails fan / node lover / Machine Learning and Big Data enthusiast
+                        Well, I am into App development based on Node, Angular, RxJS, React and other stuff.<br/><br/>
+                        Tags: Software Engineer / Computer Science Graduate / Techie / Coffee n Code addict / Node fan / Machine Learning and Big Data enthusiast
                     </p>
         }; 
     }

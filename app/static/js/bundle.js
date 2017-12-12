@@ -57,10 +57,10 @@ var Banner = function (_React$Component) {
             content: _react2.default.createElement(
                 'p',
                 null,
-                'Well, I am into App development, Machine Learning, Big data and other stuff.',
+                'Well, I am into App development based on Node, Angular, RxJS, React and other stuff.',
                 _react2.default.createElement('br', null),
                 _react2.default.createElement('br', null),
-                'Tags: Former Software Engineer / Computer Science Graduate Student / Techie / Coffee n Code addict / Rails fan / node lover / Machine Learning and Big Data enthusiast'
+                'Tags: Software Engineer / Computer Science Graduate / Techie / Coffee n Code addict / Node fan / Machine Learning and Big Data enthusiast'
             )
         };
         return _this;

@@ -1,6 +1,9 @@
 {
   "name": "manideepbollu.com",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.10.0"
+  },
   "description": "It's my personal resume website built on react",
   "main": "index.js",
   "scripts": {
